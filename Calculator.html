@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kalkulator">
+        <h1>Kalkulator</h1>
+
+        <input type="number" id="angka1" placeholder="Angka pertama" oninput="cekInput()">
+        <input type="number" id="angka2" placeholder="Angka kedua" oninput="cekInput()">
+
+        <div class="tombol">
+            <button class="operasi" onclick="hitung('+')" disabled="">+</button>
+            <button class="operasi" onclick="hitung('-')" disabled="">-</button>
+            <button class="operasi" onclick="hitung('*')" disabled="">×</button>
+            <button class="operasi" onclick="hitung('/')" disabled="">÷</button>
+        </div>
+
+        <div><p id="hasil">Hasil: </p></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
